@@ -1,13 +1,61 @@
-.navbutton{
- padding: 10px;
- border:none;
- background: none;;
- font-size: 20px;
- 
+
+.topnav{ /*black background to top navigation*/
+    background-color:#ffffff;
+    overflow: hidden;
+    margin-top: 5%;
 }
 
-#bananalogo{
-    width: 100px;
-    height: 100px;
+.topnav a {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+.topnav a:hover{
+    background-color: #000000;
+    color: #ddd;
+}
+
+.topnav a.active{
+    background-color: #000000;
+    color:white;
+}
+
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+body {
+    margin: 0; 
+     } 
+#slider {
+     overflow: hidden;
+     }
+#slider figure img {
+     width: 20%;
+     float: left;
+     }
+#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 25s slidy infinite; 
+    }
 
