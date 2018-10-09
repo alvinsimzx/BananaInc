@@ -1,10 +1,8 @@
 
-.topnav{ /*black background to top navigation*/
+.topnav{
     background-color:#ffffff;
     overflow: hidden;
-    margin-top: 5%;
 }
-
 .topnav a {
     font-family: Arial, Helvetica, sans-serif;
     float: right;
@@ -26,36 +24,103 @@
 }
 
 
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:960px;
+    height:480px;
+}
 
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-body {
-    margin: 0; 
-     } 
-#slider {
-     overflow: hidden;
-     }
-#slider figure img {
-     width: 20%;
-     float: left;
-     }
-#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 25s slidy infinite; 
-    }
+.container .slider{
+   position: absolute;
+   top:0;
+   left:0;
+   width: 500%;
+   height:100%;
+   float:left;
+   animation: animate 10s linear infinite;
+}
 
+.container .slider .slide{
+   position: relative;
+width:20%;
+height:100%;
+float: left;
+}
+
+.container .slider .slide .caption{
+   position: absolute;
+   bottom:60px;
+   left:60px;
+   padding:30px;
+   background:rgba(0,0,0,.5);
+   box-sizing:border-box;
+}
+
+.container .slider .slide .caption h2{
+   margin:0;
+   padding:0;
+   color:#fff;
+   font-size:34px;
+}
+
+
+.container .slider .slide.slide1{
+   background-image:url(images/iphonexs.jpg);
+   background-size: cover;
+   background-position: center;
+
+}
+.container .slider .slide.slide2{
+   background-image:url(images/note9.jpg);
+   background-size: cover;
+   background-position: center;
+
+}
+.container .slider .slide.slide3{
+   background-image:url(images/p20pro.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.container .slider .slide.slide4{
+   background-image:url(images/v11.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+@keyframes animate{
+   0%{
+       left:0;
+   }
+   20%{
+       left:0;
+   }
+   25%{
+       left:-100%;
+   }
+   45%{
+       left:-100%;
+   }
+   50%{
+       left:-200%;
+   }
+   70%{
+       left:-200%;
+   }
+   75%{
+       left:-300%;
+   }
+   95%{
+       left:-300%;
+   }
+   100%{
+       left:-400%;
+   }
+}
