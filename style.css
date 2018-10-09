@@ -1,16 +1,18 @@
 
 .topnav{
-    background-color:#ffffff;
+    background-color:#000000;;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .topnav a {
     font-family: Arial, Helvetica, sans-serif;
     float: right;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     padding:14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .topnav a:hover{
@@ -18,15 +20,10 @@
     color: #ddd;
 }
 
-.topnav a.active{
-    background-color: #000000;
-    color:white;
-}
 
 
 body{
     margin:0;
-    padding:0;
     font-family: sans-serif;
 }
 .container{
@@ -34,8 +31,8 @@ body{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width:960px;
-    height:480px;
+    width:70em;
+    height:30em;
 }
 
 .container .slider{
@@ -76,23 +73,31 @@ float: left;
    background-image:url(images/iphonexs.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
 
 }
 .container .slider .slide.slide2{
    background-image:url(images/note9.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
 
 }
 .container .slider .slide.slide3{
    background-image:url(images/p20pro.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
 }
 .container .slider .slide.slide4{
    background-image:url(images/v11.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
 }
 
 @keyframes animate{
@@ -123,4 +128,81 @@ float: left;
    100%{
        left:-400%;
    }
+}
+.abouthomepage{
+    background-color: #000000;
+    margin-top:10px;
+    padding: 190px;
+}
+
+.abouthomepage h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+}
+.abouthomepage h3{
+    text-align: center;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.abouthomepage p{
+    text-align: center;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.whatsnew h2{
+    text-align: center;
+    font-size:48px;
+}
+
+.whatsnew p{
+    font-size:18px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+
+.container2{
+    width: 20em;
+    height:20em;
+    border:1px solid black;
+    margin:50px auto;
+    position: relative;
+}
+.container2>img{
+    width: 20em;
+    height:20em;
+    position: absolute;
+}
+
+.container2>button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-top:7em;
+}
+
+.container2>#btn2{
+    position: relative;
+    float: right;
+}
+#disclaimer p {
+    text-align: center;
+    border-style: solid;
+}
+
+footer{
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size:20px;
 }
