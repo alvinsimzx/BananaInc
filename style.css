@@ -50,117 +50,83 @@ li.dropdown {
     display: block;
 }
 
-body{
-    margin:0;
-    font-family: sans-serif;
+body,#slider,.wrap,.slide-content{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
 }
-.container{
-    overflow: hidden;
+
+.wrap{
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width:70em;
-    height:30em;
 }
 
-.container .slider{
-   position: relative;
-   top:0;
-   left:0;
-   width: 500%;
-   height:100%;
-   float:left;
-   animation: animate 10s linear infinite;
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.slide1{
+    background-image: url('images/iphonexs.jpg')
+}
+.slide2{
+    background-image: url('images/p20pro.jpg')
+}
+.slide3{
+    background-image: url('images/note9.jpg')
+}
+.slide4{
+    background-image: url('images/v11.jpg')
 }
 
-.container .slider .slide{
-   position: relative;
-width:20%;
-height:100%;
-float: left;
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    margin-left: 10em;
+    text-align: left;
 }
 
-.container .slider .slide .caption{
-   position: absolute;
-   bottom:60px;
-   left:60px;
-   padding:30px;
-   background:rgba(0,0,0,.5);
-   box-sizing:border-box;
+.slide-content span{
+    font-size:3rem;
+    font-weight: bold;
+    color:#ffffff;
 }
 
-.container .slider .slide .caption h2{
-   margin:0;
-   padding:0;
-   color:#fff;
-   font-size:34px;
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top:-50px;
+    width:0;
+    height:0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    left:0;
+    margin-left:30px;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+#arrow-right{
+    border-width: 30px 0px 30px 40px;
+    right:0;
+    margin-right:30px;
+    border-color: transparent transparent transparent #ffffff;
 }
 
 
-.container .slider .slide.slide1{
-   background-image:url(images/iphonexs.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
 
-}
-.container .slider .slide.slide2{
-   background-image:url(images/note9.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-
-}
-.container .slider .slide.slide3{
-   background-image:url(images/p20pro.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-}
-.container .slider .slide.slide4{
-   background-image:url(images/v11.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-}
-
-@keyframes animate{
-   0%{
-       left:0;
-   }
-   20%{
-       left:0;
-   }
-   25%{
-       left:-100%;
-   }
-   45%{
-       left:-100%;
-   }
-   50%{
-       left:-200%;
-   }
-   70%{
-       left:-200%;
-   }
-   75%{
-       left:-300%;
-   }
-   95%{
-       left:-300%;
-   }
-   100%{
-       left:-400%;
-   }
-}
 .abouthomepage{
     background-color: #000000;
     margin-top:10px;
-    padding: 190px;
+    padding: 13em;
 }
 
 .abouthomepage h2{
