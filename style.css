@@ -55,7 +55,7 @@ body,#slider,.wrap,.slide-content{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -199,4 +199,135 @@ footer{
     text-align: center;
     padding: 15px;
     font-size:20px;
+
 }
+
+#banner-products,#banner-careers{
+    height:40vh;
+    width:100%;
+    background-size:cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+#banner-products{
+    background-image: url('images/banner-products.jpg');
+}
+
+#banner-careers{
+    background-image: url('images/careers.jpg');
+}
+h1.banner-text{
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+
+
+.product-click{
+    width:23em;
+    height: 15em;
+    display: inline-block;
+    margin:2em;
+    position: relative;
+}
+
+.product-click img{
+    height:15em;
+    width:23em;
+    border-radius: 4px;
+    transition: .3s;
+    border: 2px solid #000000;
+}
+
+.product-click:hover img{
+    filter: blur(2px) brightness(35%);
+    box-shadow:0 0 16px cyan;
+}
+
+.product-click h2{
+    position: absolute;
+    left:2em;
+    bottom:3em;
+    z-index: 1;
+    color:#ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.product-click:hover h2{
+    opacity: 1;
+}
+
+
+#brands{
+    text-align: center;
+    padding:1em;
+    text-decoration: underline;
+    font-size:40px;
+}
+
+.websiteform{
+    margin-top:20%;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom:1%;
+}
+
+#career-form{
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    color:grey;
+    font-size: 17px;
+  }
+   
+  .input-fields,.description{
+    width: 48%;
+  }
+
+  .input-fields input, .description textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+  .description textarea{
+    height: 300px;
+  }
+
+  #submit-button{
+      background:#39b7dd;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      color:#ffffff;
+      cursor: pointer;
+  }
+
+  #Careerheadings h1,#Careerheadings h2{
+      text-align: center;
+  }
+
+  #Careerheadings h1{
+      font-size:40px;
+  }
