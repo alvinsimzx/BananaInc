@@ -1,55 +1,54 @@
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav li {
-    float:left;
-}
-
-nav li a, .dropbtn {
+/*navigation*/
+nav {
+    position: relative;
     display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+nav ul{
+    margin:0 10px;
+    padding:0;
+    display: flex;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    display:block;
+    color:black;
+    font-weight: bold;
+    padding:33px 20px;
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color:#ffffff;
-    color:#000000;
+nav ul li a:hover{
+    text-decoration: underline;
 }
 
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
+nav ul li ul{
+    display: block;
+    background:white;
+    min-width: 250px;
     position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 1px;
+    box-shadow: 0 2px 5px black;
+    visibility: hidden;
+    transition: .5s;
+}
+
+nav ul li:hover ul{
     z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+nav ul li ul li a{
+    padding:10px;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+/*slideshow*/
 body,#slider,.wrap,.slide-content{
     margin: 0;
     padding: 0;
@@ -122,7 +121,7 @@ body,#slider,.wrap,.slide-content{
 }
 
 
-
+/*homepage about part*/
 .abouthomepage{
     background-color: #000000;
     margin-top:10px;
@@ -149,6 +148,7 @@ body,#slider,.wrap,.slide-content{
     font-size: 18px;
 }
 
+/*homepage whats new part*/
 .whatsnew h2{
     text-align: center;
     font-size:48px;
@@ -193,15 +193,9 @@ body,#slider,.wrap,.slide-content{
     border-style: solid;
 }
 
-footer{
-    background-color: #000000;
-    color:#ffffff;
-    text-align: center;
-    padding: 15px;
-    font-size:20px;
 
-}
 
+/*product banners*/
 #banner-products,#banner-careers{
     height:50vh;
     width:100%;
@@ -226,7 +220,7 @@ h1.banner-text{
     opacity: 1;
 }
 
-
+/*product clicks*/
 .product-click{
     width:23em;
     height: 15em;
@@ -271,8 +265,9 @@ h1.banner-text{
     font-size:40px;
 }
 
+/*career forms*/
 .websiteform{
-    margin-top:15%;
+    margin-top:20%;
     top:50%;
     transform: translateY(-50%);
     width: 100%;
@@ -330,3 +325,12 @@ h1.banner-text{
   #Careerheadings h1{
       font-size:40px;
   }
+
+  footer{
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size:20px;
+
+}
