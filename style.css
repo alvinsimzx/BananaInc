@@ -229,7 +229,7 @@ body,#slider,.wrap,.slide-content{
 
 
 /*product banners*/
-#banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,#banner-contact{
+#banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,#banner-contact,#banner-about{
     height:50vh;
     width:100%;
     background-size:cover;
@@ -256,6 +256,10 @@ body,#slider,.wrap,.slide-content{
 
 #banner-contact{
     background-image: url(images/contactusbanner.jpg)
+}
+
+#banner-about{
+    background-color: black;
 }
 h1.banner-text-white-text{
     border:5px solid white;
