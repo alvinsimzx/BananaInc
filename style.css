@@ -1,6 +1,37 @@
 /*navigation*/
+header{
+    background-color:beige;
+}
 nav {
     position: relative;
+    display: inline-block;
+}
+
+nav h1{
+    float: left;
+    margin:15px 20px;
+}
+
+.logoblack{
+    padding: 12px;
+    border:5px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 4px;
+    display: inline-block;
+
+}
+
+.logowhite{
+    padding: 12px;
+    border:5px solid white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
     display: inline-block;
 }
 
@@ -15,10 +46,11 @@ nav ul li{
 }
 
 nav ul li a{
-    display:block;
+    display:inline-block;
     color:black;
     font-weight: bold;
-    padding:33px 20px;
+    font-size:20px;
+    padding:33px 25px;
     text-decoration: none;
 }
 
@@ -27,25 +59,31 @@ nav ul li a:hover{
 }
 
 nav ul li ul{
-    display: block;
-    background:white;
+    display: none;
+    background-color: beige;
     min-width: 250px;
     position: absolute;
     margin-top: 1px;
     box-shadow: 0 2px 5px black;
-    visibility: hidden;
     transition: .5s;
 }
 
 nav ul li:hover ul{
     z-index: 1;
     opacity: 1;
-    visibility: visible;
+    display: block;
     
+}
+a.active{
+    text-decoration: underline;
 }
 
 nav ul li ul li a{
     padding:10px;
+}
+
+body{
+    background-color: lightyellow;
 }
 
 /*slideshow*/
@@ -57,6 +95,7 @@ body,#slider,.wrap,.slide-content{
     height: 90vh;
     overflow-x: hidden;
 }
+
 
 .wrap{
     position: relative;
@@ -86,11 +125,16 @@ body,#slider,.wrap,.slide-content{
     flex-direction: column;
     justify-content: center;
     align-items:left;
-    margin-left: 10em;
     text-align: left;
 }
 
 .slide-content span{
+    margin-left:3.5em;
+    margin-top:5em;
+    width:30%;
+    padding:1em;
+    border:5px solid white;
+    background-color:transparent;
     font-size:3rem;
     font-weight: bold;
     color:#ffffff;
@@ -125,68 +169,55 @@ body,#slider,.wrap,.slide-content{
 .abouthomepage{
     background-color: #000000;
     margin-top:10px;
-    padding: 13em;
+    padding: 7em;
+    color:white;
+    text-align: center;
 }
-
+.abouthomepage h1{
+    font-size:35px;
+    margin: 15px;
+}
 .abouthomepage h2{
     font-family:Arial, Helvetica, sans-serif;
-    color: #ffffff;
     font-size: 48px;
-    text-align: center;
 }
 .abouthomepage h3{
     text-align: center;
-    color: #ffffff;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
 
 .abouthomepage p{
     text-align: center;
-    color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
 
 /*homepage whats new part*/
 .whatsnew h2{
+    border: 5px solid black;
+    padding: 12px;
+    width:30%;
+    margin:20px auto;
     text-align: center;
     font-size:48px;
 }
 
 .whatsnew p{
-    font-size:18px;
+    font-size:20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-
+}
+.whatsnew{
+    padding: 10px;
 }
 
-.container2{
-    width: 20em;
-    height:20em;
-    border:1px solid black;
-    margin:50px auto;
-    position: relative;
-}
-.container2>img{
-    width: 20em;
-    height:20em;
-    position: absolute;
-}
-
-.container2>button{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 25px;
-    margin-top:7em;
-}
-
-.container2>#btn2{
-    position: relative;
-    float: right;
+.phoneslides{
+    display: none;
+    margin: 30px auto;
+    padding: 20px;
+    border:5px solid black;
 }
 #disclaimer p {
     text-align: center;
@@ -210,11 +241,13 @@ body,#slider,.wrap,.slide-content{
     background-image: url('images/careers.jpg');
 }
 h1.banner-text{
+    border:5px solid white;
+    padding:10px;
     color:white;
     font-size: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-    top:15%;
+    top:25%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 1;
@@ -305,9 +338,9 @@ h1.banner-text{
   color: #c5ecfd;
   width: 100%;
 }
-  .description textarea{
+.description textarea{
     height: 300px;
-  }
+}
 
   #submit-button{
       background:#39b7dd;
@@ -325,6 +358,13 @@ h1.banner-text{
   #Careerheadings h1{
       font-size:40px;
   }
+
+  #Careerheadings h2, #Careerheadings ul{
+      font-size: 20px;
+      margin:0 15%;
+      text-align: justify;
+  }
+
 
   footer{
     background-color: #000000;

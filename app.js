@@ -3,6 +3,8 @@ arrowleft = document.querySelector('#arrow-left'),
 arrowright = document.querySelector('#arrow-right'),
 current=0;
 
+var myIndex = 0;
+
 
 //clear all images
 function reset(){
@@ -48,5 +50,18 @@ arrowleft.addEventListener('click',function(){
     }
     slideleft();
 });
+
+function carousel(){
+    var i;
+    var x = document.getElementsByClassName("phoneslides");
+    for (i=0; i<x.length;i++){
+        x[i].style.display="none";
+    }
+    myIndex++
+    if(myIndex>x.length){myIndex=1}
+    x[myIndex-1].style.display="block";
+    setTimeout(carousel,2000);
+}
+carousel();
 
 startSlide()
