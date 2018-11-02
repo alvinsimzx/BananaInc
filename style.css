@@ -108,23 +108,22 @@ body,#slider,.wrap,.slide-content{
     background-attachment: fixed;
 }
 .slide1{
-    background-image: url('images/note9.jpg');
+    background-image: url(images/note9.jpg);
 }
 .slide2{
-    background-image: url('images/p20pro.jpg');
+    background-image: url(images/p20pro.jpg);
 }
 .slide3{
-    background-image:url('images/v11.jpg');
+    background-image:url(images/v11.jpg);
 }
 .slide4{
-    background-image: url('images/iphonexs.jpg');
+    background-image: url(images/iphonexs.jpg);
 }
 
 .slide-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:left;
     text-align: left;
 }
 
@@ -173,9 +172,10 @@ body,#slider,.wrap,.slide-content{
     color:white;
     text-align: center;
 }
-.abouthomepage h1{
+.abouthomepage h2{
     font-size:35px;
-    margin: 15px;
+    margin-top:10px;
+    margin-bottom: 25px;
 }
 .abouthomepage h2{
     font-family:Arial, Helvetica, sans-serif;
@@ -216,31 +216,48 @@ body,#slider,.wrap,.slide-content{
 .phoneslides{
     display: none;
     margin: 30px auto;
-    padding: 20px;
-    border:5px solid black;
+    width:360px;
+    height:360px;
 }
-#disclaimer p {
+#disclaimer h2 {
+    font-size: 20px;
     text-align: center;
-    border-style: solid;
+    margin: 10px auto;
+    border:5px solid black;
+    width:80%;
 }
-
 
 
 /*product banners*/
-#banner-products,#banner-careers{
+#banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,#banner-contact{
     height:50vh;
     width:100%;
     background-size:cover;
     background-attachment: fixed;
 }
 #banner-products{
-    background-image: url('images/banner-products.jpg');
+    background-image: url(images/banner-products.jpg);
 }
 
 #banner-careers{
-    background-image: url('images/careers.jpg');
+    background-image: url(images/careers.jpg);
 }
-h1.banner-text{
+
+#banner-accessories{
+    background-image: url(images/accessoriesbanner.jpg);
+}
+
+#banner-outlets{
+    background-image: url(images/outletsbanner.jpg);
+}
+#banner-feedback{
+    background-image: url(images/feedbackbanner.jpg);
+}
+
+#banner-contact{
+    background-image: url(images/contactusbanner.jpg)
+}
+h1.banner-text-white-text{
     border:5px solid white;
     padding:10px;
     color:white;
@@ -252,8 +269,21 @@ h1.banner-text{
     transform: translate(-50%,-50%);
     opacity: 1;
 }
+h1.banner-text-black-text{
+    border:5px solid black;
+    padding:10px;
+    color:black;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
 
 /*product clicks*/
+
 .product-click{
     width:23em;
     height: 15em;
@@ -263,6 +293,7 @@ h1.banner-text{
 }
 
 .product-click img{
+    margin: 0 auto;
     height:15em;
     width:23em;
     border-radius: 4px;
@@ -292,9 +323,14 @@ h1.banner-text{
 
 
 #brands{
+    border: 5px solid black;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 1em;
     text-align: center;
     padding:1em;
-    text-decoration: underline;
     font-size:40px;
 }
 
