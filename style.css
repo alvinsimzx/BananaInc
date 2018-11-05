@@ -1,3 +1,7 @@
+body{
+    background-color: lightyellow;
+}
+
 /*navigation*/
 header{
     background-color:beige;
@@ -12,6 +16,7 @@ nav h1{
     margin:15px 20px;
 }
 
+
 .logoblack{
     padding: 12px;
     border:5px solid black;
@@ -21,7 +26,6 @@ nav h1{
     text-decoration: none;
     letter-spacing: 4px;
     display: inline-block;
-
 }
 
 .logowhite{
@@ -82,11 +86,9 @@ nav ul li ul li a{
     padding:10px;
 }
 
-body{
-    background-color: lightyellow;
-}
+/* End of nav bar*/
 
-/*slideshow*/
+/*Index page slideshow*/
 body,#slider,.wrap,.slide-content{
     margin: 0;
     padding: 0;
@@ -95,7 +97,6 @@ body,#slider,.wrap,.slide-content{
     height: 90vh;
     overflow-x: hidden;
 }
-
 
 .wrap{
     position: relative;
@@ -162,13 +163,15 @@ body,#slider,.wrap,.slide-content{
     margin-right:30px;
     border-color: transparent transparent transparent #ffffff;
 }
+/* end of slideshow*/
 
 
-/*homepage about part*/
+
+/*homepage introduction part*/
 .abouthomepage{
     background-color: #000000;
     margin-top:10px;
-    padding: 7em;
+    padding: 15em 7em;
     color:white;
     text-align: center;
 }
@@ -192,6 +195,7 @@ body,#slider,.wrap,.slide-content{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
+/* end of homepage introduction*/
 
 /*homepage whats new part*/
 .whatsnew h2{
@@ -229,7 +233,8 @@ body,#slider,.wrap,.slide-content{
 
 
 /*product banners*/
-#banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,#banner-contact,#banner-about{
+#banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,
+#banner-contact,#banner-about,#banner-samsung,#banner-apple{
     height:50vh;
     width:100%;
     background-size:cover;
@@ -261,6 +266,18 @@ body,#slider,.wrap,.slide-content{
 #banner-about{
     background-color: black;
 }
+
+#banner-samsung{
+    background-color: darkblue;
+}
+#banner-apple{
+    background-color: black;
+}
+#applelogo img{
+    display: block;
+    margin:0 auto;
+    padding-top:25px;
+}
 h1.banner-text-white-text{
     border:5px solid white;
     padding:10px;
@@ -273,6 +290,22 @@ h1.banner-text-white-text{
     transform: translate(-50%,-50%);
     opacity: 1;
 }
+
+.logobanner{
+    border:5px solid white;
+    padding:10px;
+    color:white;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    letter-spacing: 4px;
+
+}
+
 h1.banner-text-black-text{
     border:5px solid black;
     padding:10px;
@@ -287,6 +320,11 @@ h1.banner-text-black-text{
 }
 
 /*product clicks*/
+.product-container{
+    text-align: center;;
+    width:80%;
+    margin:0 auto;
+}
 
 .product-click{
     width:23em;
@@ -399,13 +437,77 @@ h1.banner-text-black-text{
       font-size:40px;
   }
 
-  #Careerheadings h2, #Careerheadings ul{
+  #Careerheadings h2, #Careerheadings ol{
       font-size: 20px;
       margin:0 15%;
       text-align: justify;
   }
+  #Careerheadings li{
+    margin:10px 0;
+  }
 
+  /*Following are design for samsung page*/
 
+  .phonedisplay-container{
+      margin:0 auto;
+      text-align: center;
+  }
+  .phonedisplay{
+    margin:5em 1.7em; 
+    width:20%;
+    height:70%;
+    transition:transform .2s;
+    display: inline-block;
+    cursor:pointer;
+    
+}
+.phonedisplay h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  .phonedisplay img{
+      display: block;
+      padding: 10px;      
+      width:154px;
+      height:345px;
+      margin:0 auto;
+  }
+  .phonedisplay p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    margin-bottom:30px;
+}
+  
+  .phonedisplay:hover p{
+      opacity: 1;
+  }
+
+  .phonedisplay:hover{
+      border: 3px solid gray;
+      transform:scale(1.1);
+      box-shadow: 5px 10px black;
+      
+  }
+  .phonespecs{
+      text-align: center;
+      width:80%;
+      margin:0 auto;
+  }
+  .phonespecs table{
+      margin:0 auto;
+  }
+
+  #galaxyS9specs,#galaxynote9specs,#galaxyA9specs,#galaxyJ4specs{
+      display: none;
+      margin:20px;
+  }
+
+  /*end of samsung page*/
+
+  /*fixed footer css*/
   footer{
     background-color: #000000;
     color:#ffffff;
