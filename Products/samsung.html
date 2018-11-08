@@ -24,12 +24,12 @@
       <ul>
             <li><a href="../about/about.html">About</a></li>
             <li>
-              <a class="active" href="products.html" >Products</a>
+              <a class="active" href="products.html" >Phones</a>
                 <ul>
                     <li><a  href="iphone.html">iPhones</a></li>
-                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a class="active" href="samsung.html">Samsung</a></li>
                     <li><a href="huawei.html">Huawei</a></li>
-                    <li><a class="active" href="vivo.html">Vivo</a></li>
+                    <li><a  href="vivo.html">Vivo</a></li>
                     <li><a href="compare.html">Compare Phones</a></li>
                 </ul>
             </li>
@@ -61,87 +61,79 @@
 
 <article>
 
-<div class="phonedisplay-container">
-  <div class="phonedisplay">
-      <div onclick="galaxynote9()" id="samsungphone1">
-        <h2>Samsung Galaxy<br> Note 9</h2>
-        <img src="../images/galaxynote9.jpg" alt="Samsung Galaxy Note 9">
-            <div class="dissapeartext">
-              <p>
-                The infamous phablet just got a whole lot better
-              </p>
-            </div>
+    <div class="phones-container">
+      <div class="phone">
+        <div class="phone_heading">Samsung Galaxy Note 9</div>
+        <div class="phone_content">Do What Can't Be Done.</div>
+        <div class="phone-img"><img src="../images/galaxynote9.jpg" alt="V11" ></div>
+        <a href="#samsungphonespecs"><button onclick="galaxynote9()" class="buttons-phone">Specification</button></a>
       </div>
-  </div>
-
-  <div class="phonedisplay">
-    <div onclick="galaxys9()" id="samsungphone2">
-        <h2>Samsung Galaxy<br> S9</h2>
-        <img src="../images/galaxys9.jpg" alt="Samsung Galaxy S9">
-          <div class="dissapeartext">
-            <p>
-              The best phone of the century
-            </p>
-          </div>
-    </div>  
-  </div>
-
-    <div class="phonedisplay">
-      <div onclick="galaxya9()" id="samsungphone3">
-          <h2>Samsung Galaxy<br> A9</h2>
-          <img src="../images/galaxya9.jpg" alt="Samsung Galaxy A8">
-            <div class="dissapeartext">
-              <p>
-                Dual cameras are better than one
-              </p>
-            </div>
+  
+  
+      <div class="phone">
+        <div class="phone_heading">Samsung Galaxy S9</div>
+        <div class="phone_content">The Camera. Reimagined.</div>
+        <div class="phone-img"><img src="../images/galaxys9.jpg" alt="V11i" ></div>
+        <a href="#samsungphonespecs"><button onclick="galaxys9()" class="buttons-phone">Specification</button></a>
       </div>
-    </div>
-
-    <div class="phonedisplay">
-      <div onclick="galaxyj4()" id="samsungphone4">
-        <h2>Samsung Galaxy<br> J4+</h2>
-        <img src="../images/GalaxyJ4plus.jpg" alt="Samsung Galaxy J4+">
-          <div class="dissapeartext">
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaa
-            </p>
-          </div>
+  
+      <div class="phone">
+        <div class="phone_heading">Samsung Galaxy A9</div>
+        <div class="phone_content">Capture More with The Power of Four.</div>
+        <div class="phone-img"><img src="../images/galaxya9.jpg" alt="V11" ></div>
+        <a href="#samsungphonespecs"><button onclick="galaxya9()"class="buttons-phone">Specification</button></a>
       </div>
-    </div>
-</div>
+  
+      <div class="phone">
+        <div class="phone_heading">Samsung Galaxy J4+</div>
+        <div class="phone_content">Stand Out In Style.</div>
+        <div class="phone-img"><img src="../images/GalaxyJ4plus.jpg" alt="V11" ></div>
+        <a href="#samsungphonespecs"><button onclick="galaxyj4()"class="buttons-phone">Specification</button></a>
+      </div>
+    </div>   
 
 
 
-<div class="phonespecs">
-<h3>Phone Specifications</h3>
+<div id="samsungphonespecs">
+<div class="phonespecs" >
+
   <div id="galaxynote9specs">
-      <table border="">
+      <h3>Phone Specifications for Samsung Galaxy Note 9</h3>
+      <img src="../images/galaxynote9.jpg">
+      <table>
           <tr>
             <th>Processor</th>
             <td>2.7 Ghz Octo-core</td>
           </tr>
           <tr>
-              <th>Display size</th>
-              <td>162.0mm (6.4" full rectangle) / 160.4mm (6.3" rounded corners)</td>
+              <th rowspan="2">Display</th>
+              <td>Size (Main Display) 
+                <br>
+                162.0mm (6.4" full rectangle) / 160.4mm (6.3" rounded corners)</td>
           </tr>
           <tr>
-              <th>Display Resolution</th>
-              <td>2960x1440 (Quad HD+)</td>
+              <td>Resolution (Main Display)
+                <br>
+                2960x1440 (Quad HD+)</td>
           </tr>
           <tr>
               <th>Memory</th>
               <td>6GB</td>
           </tr>
           <tr>
-              <th>Camera</th>
+              <th rowspan="2">Camera</th>
               <td>Rear Camera - 12.0MP + 12.0 MP</td>
-          </tr>         
+          </tr>
+          <tr>
+            <td>Front Camera - 8.0MP</td>
+          </tr>  
         </table>
   </div>
 
   <div id="galaxyS9specs">
-      <table border="">
+      <h3>Phone Specifications for Samsung Galaxy S9</h3>
+      <img src="../images/galaxys9.jpg">
+      <table>
           <tr>
             <th>Processor</th>
             <td>2.7 Ghz Octo-core</td>
@@ -166,7 +158,9 @@
   </div>
 
   <div id="galaxyA9specs">
-      <table border="">
+      <h3>Phone Specifications for Samsung Galaxy A9</h3>
+      <img src="../images/galaxya9.jpg">
+      <table>
           <tr>
             <th>Processor</th>
             <td>2.2 Ghz Octo-core</td>
@@ -190,7 +184,9 @@
         </table>
   </div>
   <div id="galaxyJ4specs">
-      <table border="">
+      <h3>Phone Specifications for Samsung Galaxy J4</h3>
+      <img src="../images/GalaxyJ4plus.jpg">
+      <table>
           <tr>
             <th>Processor</th>
             <td>1.4 Ghz Quad-core</td>
@@ -214,7 +210,7 @@
         </table>
   </div>
 </div>
-
+</div>
 
 </article>
 

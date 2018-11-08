@@ -1,10 +1,10 @@
 body{
-    background-color: lightyellow;
+    background-color: ghostwhite;
 }
 
 /*navigation*/
 header{
-    background-color:beige;
+    background-color:ghostwhite;
 }
 nav {
     position: relative;
@@ -64,7 +64,7 @@ nav ul li a:hover{
 
 nav ul li ul{
     display: none;
-    background-color: beige;
+    background-color: ghostwhite;
     min-width: 250px;
     position: absolute;
     margin-top: 1px;
@@ -234,7 +234,7 @@ body,#slider,.wrap,.slide-content{
 
 /*product banners*/
 #banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,
-#banner-contact,#banner-about,#banner-samsung,#banner-apple{
+#banner-contact,#banner-about,#banner-samsung,#banner-apple,#banner-vivo,#banner-compare{
     height:50vh;
     width:100%;
     background-size:cover;
@@ -262,6 +262,9 @@ body,#slider,.wrap,.slide-content{
 #banner-contact{
     background-image: url(images/contactusbanner.jpg)
 }
+#banner-compare{
+    background-image: url(images/comparephones.jpg)
+}
 
 #banner-about{
     background-color: black;
@@ -269,6 +272,10 @@ body,#slider,.wrap,.slide-content{
 
 #banner-samsung{
     background-color: darkblue;
+}
+
+#banner-vivo{
+    background-color: lightblue;
 }
 #banner-apple{
     background-color: black;
@@ -448,61 +455,114 @@ h1.banner-text-black-text{
 
   /*Following are design for samsung page*/
 
-  .phonedisplay-container{
-      margin:0 auto;
-      text-align: center;
+  .phones-container {
+    display: flex;
+    flex-wrap: wrap;
+    width:95%;
+    max-height: 80%;
+    height:35em;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: white;
   }
-  .phonedisplay{
-    margin:5em 1.7em; 
-    width:20%;
-    height:70%;
-    transition:transform .2s;
-    display: inline-block;
-    cursor:pointer;
-    
-}
-.phonedisplay h2{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-  .phonedisplay img{
-      display: block;
-      padding: 10px;      
-      width:154px;
-      height:345px;
-      margin:0 auto;
-  }
-  .phonedisplay p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
-    margin-bottom:30px;
-}
   
-  .phonedisplay:hover p{
-      opacity: 1;
+  .phone {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0 7px;
+    margin: 24px -4px 24px 0;
+    text-align:center;
   }
+  
+  @media (max-width: 600px) {
+    .phone {
+      width: 50%;
+    }
+  }
+  
+  .phone_heading {
+    font-weight:bold;
+    padding-top:15px;
+    padding-bottom:0px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    background-color: white;
+    font-family: Arial,sans-serif;
+    font-size:20px;
+  }
+  
+  .phone_content {
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align:center;
+    font-family: Arial, sans-serif;
+    font-size:20px;
+    background-color:white;
+  }
+  
+  .buttons-phone{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    font-family: Arial,sans-serif;
+    margin:20px auto;
+  }
+  
+.phone_content,.buttons-phone{
+    opacity:0;
+}
 
-  .phonedisplay:hover{
-      border: 3px solid gray;
-      transform:scale(1.1);
-      box-shadow: 5px 10px black;
-      
-  }
-  .phonespecs{
-      text-align: center;
-      width:80%;
+.phone:hover .phone_content, .phone:hover .buttons-phone{
+    opacity:1;
+}
+
+  .phone-img img{
+      border-top:0;
+      border-bottom:0;
+      padding:10px;
+      background-color:white;
+      width:154px;
+      height:300px;
       margin:0 auto;
   }
-  .phonespecs table{
-      margin:0 auto;
-  }
+  .vivo img{
+    border-top:0;
+    border-bottom:0;
+    padding:10px;
+    background-color:white;
+    width:270px;
+    height:300px;
+    margin:0 auto;
+}
+
 
   #galaxyS9specs,#galaxynote9specs,#galaxyA9specs,#galaxyJ4specs{
       display: none;
-      margin:20px;
+      margin:100px;
+      border:1px solid black;
+      padding:20px;
+  }
+
+  #galaxyS9specs table,#galaxynote9specs table,#galaxyA9specs table,#galaxyJ4specs table{
+      display: inline-block;
+      border:3px solid black;
+      margin:50px 20px;
+  }
+  #galaxyS9specs img,#galaxynote9specs img,#galaxyA9specs img,#galaxyJ4specs img{
+    position: relative;
+    width:15%;
+    height:25%;
+
   }
 
   /*end of samsung page*/
