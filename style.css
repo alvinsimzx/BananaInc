@@ -2,21 +2,7 @@ body{
     background-color: ghostwhite;
 }
 
-/*navigation*/
-header{
-    background-color:ghostwhite;
-}
-nav {
-    position: relative;
-    display: inline-block;
-}
-
-nav h1{
-    float: left;
-    margin:15px 20px;
-}
-
-
+/* logo design template*/
 .logoblack{
     padding: 12px;
     border:5px solid black;
@@ -37,6 +23,21 @@ nav h1{
     text-decoration: none;
     letter-spacing: 4px;
     display: inline-block;
+}
+/****************/
+
+/*navigation bar*/
+header{
+    background-color:ghostwhite;
+}
+nav {
+    position: relative;
+    display: inline-block;
+}
+
+nav h1{
+    float: left;
+    margin:15px 20px;
 }
 
 nav ul{
@@ -87,6 +88,9 @@ nav ul li ul li a{
 }
 
 /* End of nav bar*/
+
+
+
 
 /*Index page slideshow*/
 body,#slider,.wrap,.slide-content{
@@ -197,6 +201,8 @@ body,#slider,.wrap,.slide-content{
 }
 /* end of homepage introduction*/
 
+
+
 /*homepage whats new part*/
 .whatsnew h2{
     border: 5px solid black;
@@ -232,10 +238,11 @@ body,#slider,.wrap,.slide-content{
 }
 
 
-/*product banners*/
+
+/*product page banners*/
 #banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,
-#banner-contact,#banner-about,#banner-samsung,#banner-apple,#banner-vivo,#banner-compare{
-    height:50vh;
+#banner-contact,#banner-about,#banner-samsung,#banner-apple,#banner-vivo,#banner-compare,#banner-huawei{
+    height:60vh;
     width:100%;
     background-size:cover;
     background-attachment: fixed;
@@ -286,7 +293,14 @@ body,#slider,.wrap,.slide-content{
     margin-left:78%;
 }
 
+.banner a:hover {
+    background-color: black;
+    color:white;
+}
 
+#banner-huawei{
+    background-color: crimson;
+}
 
 #banner-vivo{
     background-color: lightblue;
@@ -297,7 +311,7 @@ body,#slider,.wrap,.slide-content{
 #applelogo img{
     display: block;
     margin:0 auto;
-    padding-top:25px;
+    padding-top:4%;
 }
 h1.banner-text-white-text{
     border:5px solid white;
@@ -306,7 +320,7 @@ h1.banner-text-white-text{
     font-size: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-    top:25%;
+    top:35%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 1;
@@ -319,7 +333,7 @@ h1.banner-text-white-text{
     font-size: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-    top:25%;
+    top:35%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 1;
@@ -334,13 +348,15 @@ h1.banner-text-black-text{
     font-size: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-    top:25%;
+    top:35%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 1;
 }
 
-/*product clicks*/
+
+
+/*Product.html product choice buttons*/
 .product-container{
     text-align: center;;
     width:80%;
@@ -397,7 +413,7 @@ h1.banner-text-black-text{
     font-size:40px;
 }
 
-/*career forms*/
+/*career page form*/
 .websiteform{
     margin-top:20%;
     top:50%;
@@ -466,6 +482,7 @@ h1.banner-text-black-text{
   #Careerheadings li{
     margin:10px 0;
   }
+  /******************/
 
   /*Following are design for samsung page*/
 
@@ -560,7 +577,6 @@ h1.banner-text-black-text{
     margin:0 auto;
 }
 
-
   #galaxyS9specs,#galaxynote9specs,#galaxyA9specs,#galaxyJ4specs{
       display: none;
       margin:100px;
@@ -579,7 +595,6 @@ h1.banner-text-black-text{
     height:25%;
 
   }
-
   /*end of samsung page*/
 
   /*fixed footer css*/
@@ -591,3 +606,4 @@ h1.banner-text-black-text{
     font-size:20px;
 
 }
+/***************/
