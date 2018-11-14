@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
 <meta charset="utf-8">
@@ -47,13 +45,47 @@
             <li><a  class="active" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
+    <div class="banner">
+        <div id="banner-contact">
+          </div>
+        <h1 class="banner-text-white-text">Contact Us</h1>
+    </div>
   </header>
-
-  <div class="banner">
-      <div id="banner-contact">
+<article>
+<div id="Contact-Us-Content">
+    <h2>We'd love to connect with you!</h2>
+    <h3>Here are our social media accounts:</h3>
+    <span class="social-media">Instagram</span>
+    <span class="social-media">Twitter</span>
+    <span class="social-media">Facebook</span>
+    <div id="contact-us-form">
+        <h4>Or you can always drop us an E-mail!</h4>
+        <div class="websiteform">
+          <form id="career-form" method="POST" action="mailto:bananainc@gmail.com">
+        
+            <div class="input-fields">
+              <input name="name" type="text"  placeholder="Full Name" required="">
+              <input name="email" type="email"  placeholder="E-mail " required="">
+              <input name="phonenumber" type="tel"  placeholder="Phone number" required="">
+            </div>
+        
+            <div class="description">
+              <textarea placeholder="Tell us more about yourself"></textarea>
+            </div>
+            <div >
+                <input id="submit-button" type="submit" value="Apply">
+            </div>
+          </form>
         </div>
-      <h1 class="banner-text-white-text">Contact Us</h1>
-  </div>
+    </div>
+</div>
+</article>
+
+<script src="app.js"></script>
+<footer>
+  <p>&copy;Kiwano | Last updated:30/10/2018 </p>
+</footer>
+
 
 </body>
 </html>

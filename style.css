@@ -136,13 +136,30 @@ body,#slider,.wrap,.slide-content{
     margin-left:3.5em;
     margin-top:5em;
     width:30%;
-    padding:1em;
+    padding:10px;
     border:5px solid white;
     background-color:transparent;
-    font-size:3rem;
+    font-size:40px;
     font-weight: bold;
     color:#ffffff;
 }
+
+.slide-content button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom:5%;
+    font-size:20px;
+}
+
+.slide-content button:hover{
+    background-color:gray;
+}
+
 
 .arrow{
     cursor: pointer;
@@ -256,7 +273,7 @@ body,#slider,.wrap,.slide-content{
 }
 
 #banner-accessories{
-    background-image: url(images/accessoriesbanner.jpg);
+    background-image: url(images/accesoriesbanner.jpg);
 }
 
 #banner-outlets{
@@ -406,7 +423,7 @@ h1.banner-text-black-text{
     width:30%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 1em;
     text-align: center;
     padding:1em;
@@ -577,25 +594,58 @@ h1.banner-text-black-text{
     margin:0 auto;
 }
 
-  #galaxyS9specs,#galaxynote9specs,#galaxyA9specs,#galaxyJ4specs{
+  #phone1specs,#phone2specs,#phone3specs,#phone4specs{
       display: none;
       margin:100px;
       border:1px solid black;
       padding:20px;
   }
 
-  #galaxyS9specs table,#galaxynote9specs table,#galaxyA9specs table,#galaxyJ4specs table{
+  #phone1specs table,#phone2specs table,#phone3specs table,#phone4specs table{
       display: inline-block;
       border:3px solid black;
       margin:50px 20px;
   }
-  #galaxyS9specs img,#galaxynote9specs img,#galaxyA9specs img,#galaxyJ4specs img{
+  #phone1specs img,#phone2specs img,#phone3specs img,#phone4specs img{
     position: relative;
     width:15%;
     height:25%;
 
   }
   /*end of samsung page*/
+
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+  #Contact-Us-Content{
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size:25px;
+  }
+
+  .social-media{
+      border:2px solid black;
+  }
 
   /*fixed footer css*/
   footer{

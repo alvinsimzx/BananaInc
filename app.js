@@ -5,31 +5,49 @@ current=0;
 
 var myIndex = 0;
 
+// Scroll back to top button function
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+////////////////////////////
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 //Following are functions for all hiding and showing the samsung phone specs
-function galaxynote9(){
-    document.getElementById('galaxynote9specs').style.display ="block";
-    document.getElementById('galaxyS9specs').style.display ="none";
-    document.getElementById('galaxyA9specs').style.display ="none";
-    document.getElementById('galaxyJ4specs').style.display ="none";
+function phone1show(){
+    document.getElementById('phone1specs').style.display ="block";
+    document.getElementById('phone2specs').style.display ="none";
+    document.getElementById('phone3specs').style.display ="none";
+    document.getElementById('phone4specs').style.display ="none";
 }
-function galaxys9(){
-    document.getElementById('galaxynote9specs').style.display ="none";
-    document.getElementById('galaxyS9specs').style.display ="block";
-    document.getElementById('galaxyA9specs').style.display ="none";
-    document.getElementById('galaxyJ4specs').style.display ="none";
+function phone2show(){
+    document.getElementById('phone1specs').style.display ="none";
+    document.getElementById('phone2specs').style.display ="block";
+    document.getElementById('phone3specs').style.display ="none";
+    document.getElementById('phone4specs').style.display ="none";
 }
-function galaxya9(){
-    document.getElementById('galaxynote9specs').style.display ="none";
-    document.getElementById('galaxyS9specs').style.display ="none";
-    document.getElementById('galaxyA9specs').style.display ="block";
-    document.getElementById('galaxyJ4specs').style.display ="none";
+function phone3show(){
+    document.getElementById('phone1specs').style.display ="none";
+    document.getElementById('phone2specs').style.display ="none";
+    document.getElementById('phone3specs').style.display ="block";
+    document.getElementById('phone4specs').style.display ="none";
 }
-function galaxyj4(){
-    document.getElementById('galaxynote9specs').style.display ="none";
-    document.getElementById('galaxyS9specs').style.display ="none";
-    document.getElementById('galaxyA9specs').style.display ="none";
-    document.getElementById('galaxyJ4specs').style.display ="block";
+function phone4show(){
+    document.getElementById('phone1specs').style.display ="none";
+    document.getElementById('phone2specs').style.display ="none";
+    document.getElementById('phone3specs').style.display ="none";
+    document.getElementById('phone4specs').style.display ="block";
 }
 
 //clear all images
