@@ -6,7 +6,7 @@ body{
 .logoblack{
     padding: 12px;
     border:5px solid black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size:30px;
     color: black;
     text-decoration: none;
@@ -17,7 +17,7 @@ body{
 .logowhite{
     padding: 12px;
     border:5px solid white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size:30px;
     color: white;
     text-decoration: none;
@@ -45,7 +45,7 @@ nav ul{
     padding:0;
     display: flex;
 }
-
+ /*fix contact us button*/
 nav ul li{
     list-style:none;
 }
@@ -65,12 +65,13 @@ nav ul li a:hover{
 
 nav ul li ul{
     display: none;
-    background-color: ghostwhite;
+    background-color: whitesmoke;
     min-width: 250px;
     position: absolute;
     margin-top: 1px;
     box-shadow: 0 2px 5px black;
     transition: .5s;
+    
 }
 
 nav ul li:hover ul{
@@ -295,7 +296,7 @@ body,#slider,.wrap,.slide-content{
 }
 
 #banner-samsung{
-    background-color: darkblue;
+    background-image: url(images/note9.jpg);
 }
 
 .banner a {
@@ -316,11 +317,11 @@ body,#slider,.wrap,.slide-content{
 }
 
 #banner-huawei{
-    background-color: crimson;
+    background-image: url(images/p20banner.jpg);
 }
 
 #banner-vivo{
-    background-color: lightblue;
+    background-image: url(images/vivophones.png);
 }
 #banner-apple{
     background-color: black;
@@ -483,7 +484,7 @@ h1.banner-text-black-text{
       cursor: pointer;
   }
 
-  #Careerheadings h1,#Careerheadings h2{
+  #Careerheadings {
       text-align: center;
   }
 
@@ -500,6 +501,16 @@ h1.banner-text-black-text{
     margin:10px 0;
   }
   /******************/
+#feedback-messages{
+    text-align: center;
+}
+
+#feedback-messages p{
+margin:0 15%;
+text-align:justify;
+font-size:20px;
+}
+
 
   /*Following are design for samsung page*/
 
@@ -647,6 +658,37 @@ h1.banner-text-black-text{
       border:2px solid black;
   }
 
+  #about-company {
+      margin:20px 0;
+      font-family: Helvetica,sans-serif;
+  }
+
+  .about-company-content{
+      font-size:20px;
+      margin:2em auto;
+      width:60%;
+      border:3px solid black;
+      padding:10px;
+      background-color: whitesmoke;
+      text-align: justify;
+  }
+
+  #who-are-we{
+      background-image: url(images/about-content-who.jpg);
+      padding:17%;
+      background-attachment: fixed;
+  }
+
+  #our-aim{
+    background-image: url(images/our-mission.jpg);
+    padding:17%;
+    background-attachment: fixed;
+}
+#our-vision{
+    background-image: url(images/Our-vision.jpg);
+    padding:17%;
+    background-attachment: fixed;
+}  
   /*fixed footer css*/
   footer{
     background-color: #000000;
@@ -654,6 +696,34 @@ h1.banner-text-black-text{
     text-align: center;
     padding: 15px;
     font-size:20px;
+    clear:both;
+}
 
+#footer-sitemap{
+    text-align: left;
+}
+
+.product-sitemap{
+    text-align: left;
+    display: inline-block;
+    width:15%;
+    height:70%;
+    font-size:15px;
+    margin:0 20px;
+}
+
+.product-sitemap ul{
+    padding:0;
+    list-style-type: none;
+}
+
+.product-sitemap ul li{
+    padding:10px 0 ;
+}
+
+.product-sitemap a{
+    text-decoration: none;
+    color:white;
+    margin:30px 0;
 }
 /***************/
