@@ -31,6 +31,8 @@ header{
     background-color:ghostwhite;
 }
 nav {
+    width:100%;
+    text-align: center;
     position: relative;
     display: inline-block;
 }
@@ -47,6 +49,7 @@ nav ul{
 }
  /*fix contact us button*/
 nav ul li{
+    margin:0 auto;
     list-style:none;
 }
 
@@ -64,6 +67,7 @@ nav ul li a:hover{
 }
 
 nav ul li ul{
+    text-align: left;
     display: none;
     background-color: whitesmoke;
     min-width: 250px;
@@ -100,7 +104,7 @@ body,#slider,.wrap,.slide-content{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 90vh;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 .wrap{
@@ -117,7 +121,7 @@ body,#slider,.wrap,.slide-content{
     background-image: url(images/note9.jpg);
 }
 .slide2{
-    background-image: url(images/p20pro.jpg);
+    background-image: url(images/p20banner.jpg);
 }
 .slide3{
     background-image:url(images/v11.jpg);
@@ -133,11 +137,11 @@ body,#slider,.wrap,.slide-content{
     text-align: left;
 }
 
-.slide-content span{
+.slide-content p{
     margin-left:3.5em;
     margin-top:5em;
     width:30%;
-    padding:10px;
+    padding:20px;
     border:5px solid white;
     background-color:transparent;
     font-size:40px;
@@ -145,7 +149,8 @@ body,#slider,.wrap,.slide-content{
     color:#ffffff;
 }
 
-.slide-content button{
+.slide-content a{
+    text-decoration: none;
     border: none;
     outline: none;
     background-color: red;
@@ -157,7 +162,7 @@ body,#slider,.wrap,.slide-content{
     font-size:20px;
 }
 
-.slide-content button:hover{
+.slide-content a:hover{
     background-color:gray;
 }
 
@@ -222,7 +227,7 @@ body,#slider,.wrap,.slide-content{
 
 
 /*homepage whats new part*/
-.whatsnew h2{
+.whatsnew h4{
     border: 5px solid black;
     padding: 12px;
     width:30%;
@@ -247,7 +252,7 @@ body,#slider,.wrap,.slide-content{
     width:360px;
     height:360px;
 }
-#disclaimer h2 {
+#disclaimer h5 {
     font-size: 20px;
     text-align: center;
     margin: 10px auto;
@@ -259,7 +264,7 @@ body,#slider,.wrap,.slide-content{
 
 /*product page banners*/
 #banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,
-#banner-contact,#banner-about,#banner-samsung,#banner-apple,#banner-vivo,#banner-compare,#banner-huawei{
+#banner-contact,#banner-about,#banner-samsung,#banner-apple,#banner-vivo,#banner-compare,#banner-huawei,#banner-anker,#banner-hoco{
     height:60vh;
     width:100%;
     background-size:cover;
@@ -267,6 +272,9 @@ body,#slider,.wrap,.slide-content{
 }
 #banner-products{
     background-image: url(images/banner-products.jpg);
+}
+#banner-hoco{
+    background-image:url(images/hocoproductclick.jpg);
 }
 
 #banner-careers{
@@ -285,18 +293,27 @@ body,#slider,.wrap,.slide-content{
 }
 
 #banner-contact{
-    background-image: url(images/contactusbanner.jpg)
+    background-image: url(images/contactusbanner.jpg);
 }
 #banner-compare{
-    background-image: url(images/comparephones.jpg)
+    background-image: url(images/comparephones.jpg);
 }
 
 #banner-about{
     background-color: black;
 }
 
+#banner-kiwano{
+    border:3px solid black;
+}
+
+
+
 #banner-samsung{
     background-image: url(images/note9.jpg);
+}
+#banner-anker{
+    background-image: url(images/ankerbanner.png);
 }
 
 .banner a {
@@ -376,7 +393,7 @@ h1.banner-text-black-text{
 
 /*Product.html product choice buttons*/
 .product-container{
-    text-align: center;;
+    text-align: center;
     width:80%;
     margin:0 auto;
 }
@@ -614,7 +631,8 @@ font-size:20px;
 
   #phone1specs table,#phone2specs table,#phone3specs table,#phone4specs table{
       display: inline-block;
-      border:3px solid black;
+      font-size:20px;
+      text-align: left;
       margin:50px 20px;
   }
   #phone1specs img,#phone2specs img,#phone3specs img,#phone4specs img{
@@ -654,22 +672,23 @@ font-size:20px;
       font-size:25px;
   }
 
-  .social-media{
-      border:2px solid black;
+  #social-media{
+      width:450px;
+      height: 250px;
   }
 
+
   #about-company {
-      margin:20px 0;
+      margin:0;
       font-family: Helvetica,sans-serif;
   }
 
   .about-company-content{
-      font-size:20px;
-      margin:2em auto;
-      width:60%;
-      border:3px solid black;
-      padding:10px;
-      background-color: whitesmoke;
+      font-size:30px;
+      margin:1em auto;
+      width:80%;
+      color:beige;
+      padding:7px;
       text-align: justify;
   }
 
@@ -678,6 +697,7 @@ font-size:20px;
       padding:17%;
       background-attachment: fixed;
   }
+
 
   #our-aim{
     background-image: url(images/our-mission.jpg);
@@ -689,6 +709,27 @@ font-size:20px;
     padding:17%;
     background-attachment: fixed;
 }  
+
+.member_info{
+    margin:30px;
+    background-color: white;
+    border:3px solid black;
+    padding:20px;
+}
+
+.member_text{
+    margin:0 auto;
+    width:50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:45px;
+    display: inline-block;
+}
+
+.member_info img{
+    height:400px;
+    width: 400px;
+
+}
   /*fixed footer css*/
   footer{
     background-color: #000000;
@@ -699,6 +740,14 @@ font-size:20px;
     clear:both;
 }
 
+footer p a{
+    color:white;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    color:red;
+}
 #footer-sitemap{
     text-align: left;
 }
