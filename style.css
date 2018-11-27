@@ -462,7 +462,7 @@ font-size:20px;
 }
 
 #banner-kiwano{
-    border:3px solid black;
+    opacity: 0.4;
 }
 
 
@@ -867,9 +867,6 @@ h1.banner-text-black-text{
 }  
 
 
-
-
-
 /*Group Page*/
 .member_info{
     margin:30px;
@@ -891,6 +888,12 @@ h1.banner-text-black-text{
     height:400px;
     width: 400px;
 }
+
+#kiwano_heading{
+    font-size:30px;
+}
+
+
 /*End of group page*/
 
 
