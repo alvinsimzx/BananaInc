@@ -837,13 +837,14 @@ h1.banner-text-black-text{
   }
 
   .about-company-content{
+      opacity: 0.8;
       background-color: beige;
       z-index: 1;
       font-size:30px;
       margin:1em auto;
       width:80%;
       color:black;
-      padding:7px;
+      padding:30px;
       text-align: justify;
   }
 
