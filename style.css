@@ -922,7 +922,7 @@ footer p a:hover{
 }
 
 .product-sitemap{
-    text-align: left;
+    text-align: center;
     display: inline-block;
     width:15%;
     height:70%;
@@ -943,5 +943,9 @@ footer p a:hover{
     text-decoration: none;
     color:white;
     margin:30px 0;
+}
+
+.product-sitemap a:hover{
+    color:red;
 }
 /***************/
