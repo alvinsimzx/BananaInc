@@ -918,12 +918,11 @@ footer p a:hover{
     color:red;
 }
 #footer-sitemap{
-    margin:0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .product-sitemap{
-    text-align: center;
+    text-align: left;
     display: inline-block;
     width:15%;
     height:70%;
