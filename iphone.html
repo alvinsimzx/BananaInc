@@ -11,49 +11,49 @@
 <meta name="keywords" content="">
 
 
-<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <title>Apple iPhones</title>
 </head>
 
 <body>
 
-        <nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a class="active" href="products.html" >Phones</a>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about/about.html">About</a></li>
-                    <li>
-                      <a href="products.html" >Phones</a>
-                        <ul>
-                            <li><a href="iphone.html">iPhones</a></li>
-                            <li><a href="samsung.html">Samsung</a></li>
-                            <li><a href="huawei.html">Huawei</a></li>
-                            <li><a href="vivo.html">Vivo</a></li>
-                        </ul>
-                    </li>     
-                    <li>
-                      <a href="../accesories/accesories.html">Accessories</a>
-                      <ul>
-                        <li><a href="../accesories/hoco.html">Hoco</a></li>
-                        <li><a href="../accesories/anker.html">Anker</a></li>
-                      </ul>
-                    </li>   
-                    <li><h1 class="logoblack">Banana Inc.</h1></li>  
-                    <li><a href="../careers/careers.html">Careers</a></li>
-                    <li><a href="../outlets/outlets.html">Outlets</a></li>
-                    <li><a href="../feedback/feedback.html">Feedback</a></li>
-                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                    <li><a class="active"  href="iphone.html">iPhones</a></li>
+                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a href="huawei.html">Huawei</a></li>
+                    <li><a href="vivo.html">Vivo</a></li>
+                </ul>
+            </li>     
+            <li>
+              <a href="accesories.html">Accessories</a>
+              <ul>
+                <li><a href="hoco.html">Hoco</a></li>
+                <li><a href="anker.html">Anker</a></li>
               </ul>
-        </nav>
+            </li>   
+            <li>class="logoblack">Banana Inc.</li>  
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="outlets.html">Outlets</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+</nav>
 
    <header>
     <div class="banner">
       <div id="banner-apple">
         <div id="applelogo">
-          <img src="../images/applebanner.png" >
+          <img src="images/applebanner.png" alt="Apple Page Banner" >
         </div>
       </div>
-      <a href="https://www.apple.com/my/" target="_blank"<p>Click here to visit their official website</p></a>
+      <a href="https://www.apple.com/my/" target="_blank"><p>Click here to visit their official website</p></a>
     </div>
   </header>
 <article>
@@ -62,29 +62,29 @@
     <div class="phone">
       <div class="phone_heading">iPhone XR</div>
       <div class="phone_content">Brilliant. In every Way</div>
-      <div class="phone-img"><img src="../images/iphonexr.jpg" alt="XR" ></div>
-      <a href="#phonespecs"><button onclick="phone1show()" class="buttons-phone">Specification</button></a>
+      <div class="phone-img"><img src="images/iphonexr.jpg" alt="XR" ></div>
+      <a href="#phonespecs" class="buttons-phone" onclick="phone1show()" >Specification</a>
     </div>
 
 
     <div class="phone">
       <div class="phone_heading">iPhone XS</div>
       <div class="phone_content">Welcome to the big screens.</div>
-      <div class="phone-img"><img src="../images/iphonexs2.jpg" alt="XS" ></div>
-      <a href="#phonespecs"><button onclick="phone2show()" class="buttons-phone">Specification</button></a>
+      <div class="phone-img"><img src="images/iphonexs2.jpg" alt="XS" ></div>
+      <a href="#phonespecs"  onclick="phone2show()" class="buttons-phone">Specification</a>
     </div>
 
     <div class="phone">
       <div class="phone_heading">iPhone XS Max</div>
       <div class="phone_content">Even more big screens.</div>
-      <div class="phone-img"><img src="../images/iphonexsmax.jpg" alt="XSMax" ></div>
-      <a href="#phonespecs"><button onclick="phone3show()"class="buttons-phone">Specification</button></a>
+      <div class="phone-img"><img src="images/iphonexsmax.jpg" alt="XSMax" ></div>
+      <a href="#phonespecs" onclick="phone3show()" class="buttons-phone">Specification</a>
     </div>
     <div class="phone">
       <div class="phone_heading">iPhone 8</div>
       <div class="phone_content">A huge step forward.</div>
-      <div class="phone-img"><img src="../images/iphone8.png" alt="XSMax" ></div>
-      <a href="#phonespecs"><button onclick="phone3show()"class="buttons-phone">Specification</button></a>
+      <div class="phone-img"><img src="images/iphone8.png" alt="XSMax" ></div>
+      <a href="#phonespecs" onclick="phone3show()" class="buttons-phone">Specification</a>
     </div>
   </div> 
 
@@ -93,7 +93,7 @@
 
     <div id="phone1specs">
         <h3>Phone Specifications for iPhone XR</h3>
-        <img src="../images/iphonexr.jpg" alt="iPhone xr Specifications">
+        <img src="images/iphonexr.jpg" alt="iPhone xr Specifications">
         <table>
             <tr>
               <th>Processor</th>
@@ -125,8 +125,8 @@
     </div>
   
     <div id="phone2specs">
-        <h3>Phone Specifications for IphoneXS</h3>
-        <img src="../images/iphonexs2.jpg" alt="iphone xs specs">
+        <h3>Phone Specifications for iPhone XS</h3>
+        <img src="images/iphonexs2.jpg" alt="iphone xs specs">
         <table>
             <tr>
               <th>Processor</th>
@@ -155,8 +155,8 @@
     </div>
   
     <div id="phone3specs">
-        <h3>Phone Specifications for Iphone XS Max</h3>
-        <img src="../images/iphonexsmax.jpg" alt="iphone xs specs">
+        <h3>Phone Specifications for iPhone XS Max</h3>
+        <img src="images/iphonexsmax.jpg" alt="iphone xs specs">
         <table>
             <tr>
               <th>Processor</th>
@@ -185,8 +185,8 @@
     </div>
 
     <div id="phone4specs">
-      <h3>Phone Specifications for Iphone 8</h3>
-      <img src="../images/iphone8.jpg" alt="iphone 8 specs">
+      <h3>Phone Specifications for iPhone 8</h3>
+      <img src="images/iphone8.jpg" alt="iphone 8 specs">
       <table>
           <tr>
             <th>Processor</th>
@@ -216,10 +216,11 @@
           </tr>  
         </table>
     </div>
+    </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </article>
 
-<script src="../app.js"></script>
+<script src="app.js"></script>
 <footer>
     
     
@@ -227,9 +228,9 @@
             <div class="product-sitemap">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="../about/about.html" target="_blank">About Us</a></li>
-                        <li><a href="../feedback/feedback.html" target="_blank">Feedback</a></li>
-                        <li><a href="../careers/careers.html" target="_blank">Careers</a></li>
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="feedback.html" target="_blank">Feedback</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
                     </ul>
                     <br>
             </div>
@@ -245,16 +246,16 @@
     <div class="product-sitemap">
             <h3>Accesories</h3>
             <ul>
-                <li><a href="../accesories/hoco.html" target="_blank">Hoco</a></li>
-                <li><a href="../accesories/anker.html" target="_blank">Anker</a></li>
+                <li><a href="hoco.html" target="_blank">Hoco</a></li>
+                <li><a href="anker.html" target="_blank">Anker</a></li>
             </ul>
             <br><br><br>
     </div>
     <div class="product-sitemap">
             <h3>Customer Information</h3>
             <ul>
-                <li><a href="../contact/contact.html" target="_blank">Contact Us</a></li>
-                <li><a href="../outlets/outlets.html" target="_blank">Our Outlets</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="outlets.html" target="_blank">Our Outlets</a></li>
             </ul>
             <br><br><br>
     </div>
@@ -267,7 +268,7 @@
             <br>
     </div>
     </div>
-    <p><a href="../Kiwano/kiwano.html">&copy;Kiwano</a> | Last updated:10/11/2018 </p>
+    <p><a href="kiwano.html">&copy;Kiwano</a> | Last updated:10/11/2018 </p>
 </footer>
 
 

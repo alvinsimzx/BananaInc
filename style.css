@@ -3,8 +3,10 @@ body{
 }
 
 /* logo design template*/
-.logoblack{
+.logoblack {
+    font-weight: bold;
     padding: 12px;
+    margin:5px 5px;
     border:5px solid black;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size:30px;
@@ -94,7 +96,44 @@ nav ul li ul li a{
 
 /* End of nav bar*/
 
+/* Outlets */
 
+#text{
+	text-align:center;
+	font-size:25px;
+
+}
+
+#text h2{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+	
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	margin: 0;
+	height: 400px;
+}
+
+.gmap_canvas iframe{
+	width:50%;
+	height:380px;
+}
+
+.gmap_canvas p{
+	margin-top:50px;
+	padding-left:10px;
+	font-size:20px;
+}
+
+.descriptionp{
+	width:50%;
+	float:right;
+
+}
+
+/* End of outlets page /*
 
 
 /*Index page slideshow*/
@@ -261,6 +300,123 @@ body,#slider,.wrap,.slide-content{
 }
 
 
+/* feedback Form*/
+#feedback-messages{
+    text-align: center;
+}
+
+#feedback-messages p{
+margin:0 15%;
+text-align:justify;
+font-size:20px;
+}
+
+#contactform{
+	position: relative;
+    font-family:Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+.feedbacktable{
+	margin:auto;
+}
+
+.btn{
+    display: inline-block;
+    background: grey;
+    color: white;
+    font-size:15px;
+	font-family: Arial, sans-serif;
+    padding: 0.2em 1em;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#contactform input[type=submit] {
+    cursor: pointer;
+}
+
+.feedback-button {
+    margin-top: -4%;
+    margin-left: 2%;
+}
+
+.feedbacktable tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.feedbacktable td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.empty-h {
+    display: none;
+}
+
+#contactform form {
+    position: relative;
+    font-size: 15px;
+	color: black;
+	display: block;
+}
+
+#contactform fieldset {
+    margin: 0 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #fff;
+	border: 1px solid black;
+}
+
+#contactform legend {
+    font-size: 20px;
+    background-color: #696969;
+    color: white;
+    padding: 5px 15px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#contactform table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	margin: 0 auto;
+}
+
+.sec_table {
+    margin: 0 10%;
+}
+
+#contactform tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#contactform table td {
+    text-align: left;
+    width: 14%;
+    height: 50px;
+    padding-right: 10px;
+}
+
+#sastlevel{
+	padding-left:15%;
+}
+
+#suggestion{
+	width:100%
+}
+
+/* End of Feedback Form*/
+
+
 
 /*product page banners*/
 #banner-products,#banner-careers,#banner-accessories,#banner-outlets,#banner-feedback,
@@ -306,7 +462,6 @@ body,#slider,.wrap,.slide-content{
 #banner-kiwano{
     border:3px solid black;
 }
-
 
 
 #banner-samsung{
@@ -388,7 +543,7 @@ h1.banner-text-black-text{
     transform: translate(-50%,-50%);
     opacity: 1;
 }
-
+/* End of product page banners*/
 
 
 /*Product.html product choice buttons*/
@@ -447,6 +602,8 @@ h1.banner-text-black-text{
     padding:1em;
     font-size:40px;
 }
+/*Product choice buttons*/
+
 
 /*career page form*/
 .websiteform{
@@ -518,18 +675,10 @@ h1.banner-text-black-text{
     margin:10px 0;
   }
   /******************/
-#feedback-messages{
-    text-align: center;
-}
-
-#feedback-messages p{
-margin:0 15%;
-text-align:justify;
-font-size:20px;
-}
 
 
-  /*Following are design for samsung page*/
+
+  /*Following are design for each product page*/
 
   .phones-container {
     display: flex;
@@ -549,7 +698,7 @@ font-size:20px;
     width: 25%;
     box-sizing: border-box;
     vertical-align: top;
-    padding: 0 7px;
+    padding: 0 10px;
     margin: 24px -4px 24px 0;
     text-align:center;
   }
@@ -593,6 +742,7 @@ font-size:20px;
     font-size: 14px;
     font-family: Arial,sans-serif;
     margin:20px auto;
+    text-decoration: none;
   }
   
 .phone_content,.buttons-phone{
@@ -608,7 +758,7 @@ font-size:20px;
       border-bottom:0;
       padding:10px;
       background-color:white;
-      width:154px;
+      width:150px;
       height:300px;
       margin:0 auto;
   }
@@ -637,11 +787,12 @@ font-size:20px;
   }
   #phone1specs img,#phone2specs img,#phone3specs img,#phone4specs img{
     position: relative;
-    width:15%;
-    height:25%;
+    width:200px;
+    height:300px;
 
   }
-  /*end of samsung page*/
+/*end of product page*/
+
 
 
   #myBtn {
@@ -672,7 +823,7 @@ font-size:20px;
       font-size:25px;
   }
 
-  #social-media{
+  .social-media{
       width:450px;
       height: 250px;
   }
@@ -710,6 +861,10 @@ font-size:20px;
     background-attachment: fixed;
 }  
 
+
+
+
+/*Group Page*/
 .member_info{
     margin:30px;
     background-color: white;
@@ -728,9 +883,12 @@ font-size:20px;
 .member_info img{
     height:400px;
     width: 400px;
-
 }
-  /*fixed footer css*/
+/*End of group page*/
+
+
+
+/*fixed footer css*/
   footer{
     background-color: #000000;
     color:#ffffff;
