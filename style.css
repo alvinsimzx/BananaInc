@@ -323,6 +323,10 @@ font-size:20px;
 	margin:auto;
 }
 
+#time{
+    padding-left:8%;
+}
+
 .btn{
     display: inline-block;
     background: grey;
@@ -409,7 +413,7 @@ font-size:20px;
 }
 
 #sastlevel{
-	padding-left:15%;
+	padding-left:19%;
 }
 
 #suggestion{
